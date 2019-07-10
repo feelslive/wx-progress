@@ -1,0 +1,5 @@
+<view class="progress progress-bg" style="width: {{orientation == 'landscape' ? width : strokeWidth}}rpx; border-radius:{{radius}}rpx; background-color: {{backgroundColor}}; height: {{orientation == 'landscape' ? strokeWidth : width}}rpx">
+    <view class="progress-line" style="width: {{lineWidth}}rpx; height: {{lineHeight}}rpx; top:{{lineTop}}rpx; border-radius:{{radius}}rpx; {{setBackground}}">
+        <view wx:if="{{showPoint}}" class='progress-point' style="width: {{pointWidth}}rpx; height: {{pointHeight}}rpx; line-height: {{pointHeight}}rpx; background: {{portraitOrientation == 'bottom' && orientation == 'portrait' ? pointLandscapeBgColor : setPointBackground}};left:{{pointLeft}}rpx; right: {{pointRight}}rpx; top: {{pointTop}}; bottom: {{pointBottom}};}}">{{pointValue}}</view>
+    </view>
+</view>

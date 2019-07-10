@@ -1,0 +1,19 @@
+.progress {
+    width: 670rpx;
+}
+.progress-bg {
+    position: relative;
+    margin: 0 auto;
+}
+
+.progress-line {
+    position: absolute;
+}
+
+.progress-point {
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFF;
+    font-size: 24rpx;
+}
